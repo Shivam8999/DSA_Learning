@@ -11,13 +11,12 @@ public class SelectionSort {
     public  static  void  selectionSort(int[] arr){
         int len = arr.length;
         for (int i = 0; i <= len-2; i++) { //n
-            int minIndex = i;
+            int minIndex = i;//one item is checked at a time, always compared to remaining list of array because earlier item are sorted as the sorting starts from 0th item
             for (int j = i+1;j<len-1;j++){ //n-1, n-2, n-3 ........
                 if(arr[j]<arr[minIndex]){
-                    System.out.println("minIndex old : "+minIndex+" its value: "+arr[minIndex]);
+//                    System.out.println("minIndex old : "+minIndex+" its value: "+arr[minIndex]);
                     minIndex=j;
-                    System.out.println("minIndex new : "+minIndex+" its value: "+arr[minIndex]);
-
+//                    System.out.println("minIndex new : "+minIndex+" its value: "+arr[minIndex]);
                 }
             }
 
